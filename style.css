@@ -1,16 +1,269 @@
-
-body{
-    color: rgb(0, 0, 0);
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-
-
-
-@media (min-width: 900px) {
-
+html,
+body {
+    min-height: 100%;
 }
-@media (max-width: 900px) {
 
+body {
+    background: #0d0f0c;
+    color: #d8d4c8;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    height: 82vh;
+    min-height: 550px;
+    overflow: hidden;
+    background: #0d0f0c;
+}
+
+
+
+/* Main dark/grey shape */
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: #292b24;
+
+    clip-path: polygon(
+        0 0,
+        100% 20%,
+        100% 80%,
+        0 60%
+    );
+
+    z-index: 1;
+}
+
+
+.hero-inner {
+    position: relative;
+
+    width: min(1300px, 90%);
+    height: 100%;
+
+    margin: 0 auto;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+.intro {
+    position: absolute;
+
+    width: 700px;
+
+    left: 0;
+    top: 20%;
+
+    z-index: 3;
+}
+
+
+.title {
+    display: block;
+
+    font-size: 16px;
+    line-height: 1;
+
+    margin-bottom: 18px;
+
+    color: #d8d4c8;
+}
+
+
+/* Main name */
+
+h1 {
+    font-family: "Times New Roman", serif;
+
+    font-weight: 300;
+
+    font-size: 80px;
+
+    line-height: 0.91;
+
+    letter-spacing: 0.015em;
+
+    color: #d8d4c8;
+}
+
+
+/* Horizontal line under name */
+
+.divider {
+    width: 460px;
+    height: 1px;
+
+    background: #77786f;
+
+    margin-top: 21px;
+    margin-bottom: 20px;
+}
+
+
+/* Small information */
+
+.details {
+    font-size: 12px;
+    line-height: 1.55;
+
+    color: #c1beb4;
+}
+
+.details p {
+    margin-bottom: 9px;
+}
+
+.degrees {
+    text-decoration: underline;
+    text-decoration-color: #5a855d;
+}
+
+
+/* =========================
+   PORTRAIT
+========================= */
+
+.portrait {
+    position: absolute;
+    z-index: 2;
+    width: 50%;
+    right: 0%;
+    bottom: 0%;
+}
+
+
+.portrait img {
+    display: block;
+
+    width: 950px;
+    height: auto;
+
+    object-fit: contain;
+}
+.ger-img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+
+/* =========================
+   Nav-FOOTER
+========================= */
+
+.nav-footer {
+    position: relative;
+
+    width: min(900px, 90%);
+
+    margin: 0 auto;
+
+    font-size: 9px;
+    line-height: 1.7;
+
+    color: #aaa89f;
+}
+
+
+.nav-footer strong {
+    color: #d2d0c8;
+    font-weight: normal;
+}
+
+.address {
+    font-size: 12px;
+
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.contact {
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 8px 22px;
+
+    font-size: 12px;
+}
+
+
+.contact a {
+    color: #d2d0c8;
+
+    text-decoration: underline;
+    text-decoration-color: #75858c;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .hero {
+        height: 760px;
+        min-height: 760px;
+    }
+
+    .hero::before {
+        clip-path: polygon(
+            0 0,
+            100% 1%,
+            100% 88%,
+            0 78%
+        );
+    }
+
+    .hero-inner {
+        width: 88%;
+    }
+
+    .intro {
+        top: 9%;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .divider {
+        width: 300px;
+    }
+
+    .portrait {
+        width: 88%;
+
+        right: -14%;
+        bottom: 5%;
+    }
+
+    .nav-footer {
+        width: 88%;
+    }
+
+    .contact {
+        display: block;
+    }
+
+    .contact span {
+        display: block;
+        margin-bottom: 8px;
+    }
 }
