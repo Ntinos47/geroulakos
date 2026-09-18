@@ -2,11 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-html,
-body {
-    min-height: 100%;
+    font-family: "Lato", sans-serif;
 }
 
 .headerContainer {
@@ -20,7 +16,7 @@ body {
     min-height: 550px;
     position: relative;
     overflow: hidden;
-    background: #434238;
+    background: linear-gradient(90deg, #1c1c16 0%, #565448 100%);
 }
 
 
@@ -40,8 +36,8 @@ body {
     clip-path: polygon(
         0 0,
         100% 0,
-        100% 20%,
-        0 10%
+        100% 18%,
+        10% -2%
     );
 
   
@@ -60,8 +56,8 @@ body {
     background: #0d0f0c;
 
     clip-path: polygon(
-        0 80%,
-        100% 95%,
+        0 78%,
+        110% 96%,
         100% 100%,
         0 100%
     );
@@ -73,7 +69,7 @@ body {
 .heroInner {
     position: relative;
 
-    width: min(1000px, 90%);
+    width: min(1100px, 90%);
     height: 100%;
 
     margin: 0 auto;
@@ -82,10 +78,8 @@ body {
 .intro {
     position: absolute;
 
-    width: 700px;
-
     left: 5%;
-    top: 12%;
+    top: 14%;
 
     z-index: 3;
 }
@@ -104,9 +98,7 @@ body {
 
 
 /* Main name */
-
 h1 {
-    font-family: "Times New Roman", serif;
 
     font-weight: 300;
 
@@ -121,7 +113,6 @@ h1 {
 
 
 /* Horizontal line under name */
-
 .divider {
     width: 460px;
     height: 1px;
@@ -147,15 +138,13 @@ h1 {
 }
 
 
-
 /* ========================= PORTRAIT ========================= */
-
 .portrait {
     position: absolute;
 
-    width: 48%;
+    width: 50%;
     right: 0%;
-    bottom: 4%;
+    bottom: 2%;
 
     z-index: 1;
 }
@@ -163,7 +152,7 @@ h1 {
 .portrait img {
     display: block;
 
-    width: 700px;
+    width: 730px;
     height: auto;
 
     object-fit: contain;
@@ -180,7 +169,7 @@ h1 {
 .nav-footer {
     position: relative;
 
-    width: min(900px, 90%);
+    width: min(1000px, 90%);
 
     margin: 0 auto;
 
@@ -226,12 +215,12 @@ h1 {
 
 .parentContentContainer {
     background: #fff4e1;
-        border-bottom: 1px solid #000000;
-
+    border-bottom: 1px solid #00000075;
+    height: 90px;
 }
 
 .contentContainer {
-    width: min(900px, 90%);
+    width: min(1000px, 90%);
     height: 80px;
     background: #fff4e1;
 
@@ -247,8 +236,9 @@ h1 {
     font-size: 12px;
 }
 
-.secText1 {
-    padding-top: 30px;
+.secText {
+    width: 55%;
+    padding: 30px 0 10px 0;
 }
 
 
