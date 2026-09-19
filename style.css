@@ -189,7 +189,7 @@ h1 {
     font-size: 12px;
 
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .contact {
@@ -199,7 +199,7 @@ h1 {
     font-size: 12px;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 
@@ -233,7 +233,7 @@ h1 {
     margin: 0 auto;
     line-height: 1.7;
 
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .secText {
@@ -242,8 +242,62 @@ h1 {
 }
 
 
+/* ========================= MOBILE ========================= */
 
+.parentPositionsContainer {
+    width: 100%;
+    background: linear-gradient(180deg, #e8decc 0%, #fff4e1 100%);
+}
 
+.positionsSection {
+    width: min(1000px, 90%);
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: start;
+    padding: 40px 0;
+}
+
+.sectionTitle {
+    width: 40%;
+    padding: 10px;
+    font-size: 35px;
+    font-weight: lighter;
+}
+
+.positionsList{
+    width: 55%;
+    padding: 10px;
+}
+
+.wrapListText {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+    font-size: 16px;
+}
+
+.listText {
+    width: 70%;
+}
+.positionTitle {
+    font-weight: bold;
+    padding: 10px 0;
+}
+.positionSubTitle {
+    font-weight: lighter;
+    font-size: 14px;
+}
+.positionPage {
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 10px 0;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
 
 /* ========================= MOBILE ========================= */
 
