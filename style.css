@@ -192,6 +192,10 @@ h1 {
     margin-bottom: 40px;
 }
 
+.heroIt {
+    font-style: italic;
+}
+
 .contact {
     display: flex;
     flex-wrap: nowrap;
@@ -266,7 +270,7 @@ h1 {
 }
 
 .positionsList{
-    width: 55%;
+    width: 60%;
     padding: 10px;
 }
 
