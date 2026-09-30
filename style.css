@@ -451,6 +451,87 @@ h1 {
     width: 55%;
     margin-bottom: 20px;
 }
+
+/* ========================= DEGREES ========================= */
+
+.wrapDegreesContainer {
+    width: 100%;
+}
+
+.degreesContainer {
+    padding: 60px 0;
+}
+
+.degContainer {
+    width: min(1200px, 90%);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: start;
+    padding: 40px 0;
+}
+
+.degreesHeroTitle {
+    width: 100%;
+    font-size: 44px;
+    font-weight: lighter;
+}
+
+.degreesList {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.degreesList li {
+    flex: 1;
+    text-align: center;
+
+    padding: 0 25px;
+
+    position: relative;
+}
+
+/* Small line between each item */
+.degreesList li:not(:last-child)::after {
+    content: "";
+
+    position: absolute;
+
+    right: 0;
+    top: 10%;
+    height: 80%;
+
+    width: 1px;
+
+    background: #aaa;
+}
+
+/* Bigger title */
+.degreeTitle {
+    font-size: 26px;
+    font-weight: 700;
+
+    margin-bottom: 8px;
+}
+
+/* Smaller description */
+.degreeDescription {
+    font-size: 13px;
+    font-weight: 300;
+
+    line-height: 1.5;
+
+    margin: 0;
+}
+
+
 /* ========================= MOBILE ========================= */
 
 @media (max-width: 700px) {
