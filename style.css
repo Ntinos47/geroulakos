@@ -19,117 +19,71 @@
     background: linear-gradient(90deg, #1c1c16 0%, #565448 100%);
 }
 
-
-
 .hero::before {
     content: "";
     position: absolute;
-
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100%;
-
     background: #0d0f0c;
-
-    clip-path: polygon(
-        0 0,
-        100% 0,
-        100% 18%,
-        10% -2%
-    );
-
-  
+    clip-path: polygon(0 0, 100% 0, 100% 18%, 10% -2%);
     z-index: 2;
 }
+
 .hero::after {
     content: "";
     position: absolute;
-
     left: 0;
     bottom: 0;
-
     width: 100%;
     height: 100%;
-
     background: #0d0f0c;
-
-    clip-path: polygon(
-        0 78%,
-        110% 96%,
-        100% 100%,
-        0 100%
-    );
-
+    clip-path: polygon(0 78%, 110% 96%, 100% 100%, 0 100%);
     z-index: 2;
 }
 
-
 .heroInner {
     position: relative;
-
     width: min(1200px, 90%);
     height: 100%;
-
     margin: 0 auto;
 }
 
 .intro {
     position: absolute;
-
     left: 5%;
     top: 14%;
-
     z-index: 3;
 }
 
-
 .title {
     display: block;
-
     font-size: 16px;
     line-height: 1;
-
     margin-bottom: 18px;
-
     color: #d8d4c8;
 }
 
-
-/* Main name */
 h1 {
-
     font-weight: 300;
-
     font-size: 80px;
-
     line-height: 0.91;
-
     letter-spacing: 0.015em;
-
     color: #d8d4c8;
 }
 
-
-/* Horizontal line under name */
 .divider {
     width: 460px;
     height: 1px;
-
     background: #77786f;
-
     margin-top: 21px;
     margin-bottom: 20px;
 }
 
-
-/* Small information */
-
 .details {
     font-size: 12px;
     line-height: 1.55;
-
     color: #c1beb4;
 }
 
@@ -137,24 +91,19 @@ h1 {
     margin-bottom: 9px;
 }
 
-
 /* ========================= PORTRAIT ========================= */
 .portrait {
     position: absolute;
-
     width: 50%;
     right: 0%;
     bottom: 2%;
-
     z-index: 1;
 }
 
 .portrait img {
     display: block;
-
     width: 730px;
     height: auto;
-
     object-fit: contain;
 }
 
@@ -163,22 +112,15 @@ h1 {
     transform: scaleX(-1);
 }
 
-
 /* ========================= Nav-FOOTER ========================= */
-
 .nav-footer {
     position: relative;
-
     width: min(1200px, 90%);
-
     margin: 0 auto;
-
     font-size: 9px;
     line-height: 1.7;
-
     color: #aaa89f;
 }
-
 
 .nav-footer strong {
     color: #d2d0c8;
@@ -187,7 +129,6 @@ h1 {
 
 .address {
     font-size: 12px;
-
     margin-top: 10px;
     margin-bottom: 40px;
 }
@@ -206,43 +147,34 @@ h1 {
     padding-bottom: 40px;
 }
 
-
 .contact a {
     color: #d2d0c8;
-
     text-decoration: underline;
     text-decoration-color: #75858c;
 }
 
-
 /* ========================= CONTENT ========================= */
-
 .parentContentContainer {
     background: #fff4e1;
     border-bottom: 1px solid #00000075;
-    height: 90px;
 }
 
 .contentContainer {
     width: min(1200px, 90%);
-    height: 80px;
+    min-height: 80px;
     background: #fff4e1;
-
-
     display: flex;
     justify-content: start;
     align-items: center;
-    
     position: relative;
     margin: 0 auto;
     line-height: 1.7;
-
     font-size: 14px;
 }
 
 .secText {
     width: 55%;
-    padding: 30px 0 10px 0;
+    padding: 30px 0;
 }
 
 .parentPositionsContainer {
@@ -256,6 +188,7 @@ h1 {
     margin: 0 auto;
     justify-content: space-between;
     align-items: start;
+    flex-direction: row-reverse;
     padding: 40px 0;
 }
 
@@ -265,10 +198,12 @@ h1 {
     font-size: 35px;
     font-weight: lighter;
 }
-.padAdding{
+
+.padAdding {
     padding: 20px 0 0 110px;
 }
-.positionsList{
+
+.positionsList {
     width: 60%;
     padding: 10px;
 }
@@ -284,53 +219,43 @@ h1 {
 .listText {
     width: 70%;
 }
+
 .positionTitle {
     font-weight: bold;
     padding: 10px 0;
 }
+
 .positionSubTitle {
     font-weight: lighter;
     font-size: 14px;
 }
+
 .positionPage {
     font-weight: lighter;
     font-size: 20px;
     padding: 10px 0;
-
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
 }
 
 /* ========================= BLACK ========================= */
-
 .parentBlackContainer {
     width: 100%;
-    height: 320px;
-
     background: #000000;
-
     position: relative;
     z-index: 5;
-
     overflow: visible;
 }
 
-
 .blackContainer {
     width: min(1200px, 90%);
-    height: 100%;
-
+    min-height: 320px;
     margin: 0 auto;
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
     position: relative;
 }
-
-
-/* ========================= IMAGES ========================= */
 
 .blackImage {
     width: 350px;
@@ -340,109 +265,73 @@ h1 {
     z-index: 10;
 }
 
-
 .blackImage img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-
     display: block;
-
     border: 1px solid #11120D80;
     border-radius: 10px;
 }
 
-
-/* Left image */
 .leftImage {
     left: 0;
 }
 
-
-/* Right image */
 .rightImage {
     right: 0;
 }
 
-
-/* ========================= CENTER TEXT ========================= */
-
 .blackText {
     grid-column: 2;
-
     width: 100%;
-
     height: 100%;
-
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
-
     text-align: center;
-
     color: #fff4e1;
-
     z-index: 3;
+    padding: 40px 0;
 }
-
 
 .blackText h3 {
     font-size: 20px;
-
     font-weight: bold;
-
     margin: 0;
-
     line-height: 1.3;
 }
 
-
 .blackText p {
     font-size: 23px;
-
     font-weight: 300;
-
     line-height: 1.45;
-
     margin: 25px 0;
-
     color: #d8d4c8;
 }
 
-
 .blackDivider {
     width: 235px;
-
     height: 1px;
-
     background: #77786f;
-
     margin: 14px 0;
 }
 
 /* ========================= 2ND TEXT SECTION ========================= */
-
 .parentContentSection {
     background: #fff4e1;
     border-bottom: 1px solid #00000075;
-    height: 200px;
 }
 
 .contentSection {
     width: min(1200px, 90%);
-    height: 100%;
-
+    min-height: 200px;
     background: #fff4e1;
-
     display: flex;
     align-items: flex-end;
-
     position: relative;
     margin: 0 auto;
-
     line-height: 1.7;
     font-size: 14px;
 }
@@ -450,16 +339,12 @@ h1 {
 .secText2 {
     width: 55%;
     margin-bottom: 20px;
+    padding-top: 20px;
 }
 
 /* ========================= DEGREES ========================= */
-
 .wrapDegreesContainer {
     width: 100%;
-}
-
-.degreesContainer {
-    padding: 60px 0;
 }
 
 .degContainer {
@@ -468,7 +353,7 @@ h1 {
     flex-direction: column;
     margin: 0 auto;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
     padding: 40px 0;
 }
 
@@ -483,106 +368,386 @@ h1 {
     flex-direction: row;
     align-items: stretch;
     justify-content: space-between;
-
     list-style: none;
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 .degreesList li {
     flex: 1;
     text-align: center;
-
     padding: 0 25px;
-
     position: relative;
 }
 
-/* Small line between each item */
 .degreesList li:not(:last-child)::after {
     content: "";
-
     position: absolute;
-
     right: 0;
     top: 10%;
     height: 80%;
-
     width: 1px;
-
     background: #aaa;
 }
 
-/* Bigger title */
 .degreeTitle {
     font-size: 26px;
     font-weight: 700;
-
     margin-bottom: 8px;
 }
 
-/* Smaller description */
 .degreeDescription {
     font-size: 13px;
     font-weight: 300;
-
     line-height: 1.5;
-
     margin: 0;
 }
+.degreesContainer {
+    padding: 80px 0;
+}
 
+/* ========================= LABEL ========================= */
+.parentContentContainer2 {
+    background: #fff4e1;
+}
 
-/* ========================= MOBILE ========================= */
+.thirdText {
+    width: 40%;
+}
 
-@media (max-width: 700px) {
+/* ========================= List Section ========================= */
+.parentPositionsContainer2 {
+    width: 100%;
+    background: #fff4e1;
+}
 
+.wrapListText2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6px 0;
+    font-size: 12px;
+}
+
+.listText2 {
+    width: 100%;
+}
+
+/* ========================= BOOKS ========================= */
+.publicationsSection {
+    width: 100%;
+    background: #fff4e1;
+    padding: 70px 0 60px;
+}
+
+.publicationsInner {
+    width: min(1150px, 90%);
+    margin: 0 auto;
+    background: #000;
+    padding: 75px 65px 80px;
+}
+
+.publicationsHeader {
+    color: #fff4e1;
+    margin-bottom: 45px;
+}
+
+.publicationsHeader span {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+}
+
+.publicationsHeader p {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+}
+
+.booksList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.bookCard {
+    height: 255px;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #fff4e1;
+}
+
+.bookType {
+    font-size: 9px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.bookCard h3 {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.25;
+    margin: 0 0 12px;
+}
+
+.bookCard p {
+    color: #aaa69b;
+    font-size: 11px;
+    line-height: 1.45;
+    margin: 0;
+    max-width: 95%;
+}
+
+.bookBottom {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #8e8a80;
+    font-size: 10px;
+}
+
+.siteFooter {
+    width: 100%;
+    background: #fff4e1;
+    padding: 0 0 55px;
+    color: #151515;
+}
+
+.footerInner {
+    width: min(1080px, 90%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    column-gap: 100px;
+    padding-top: 5px;
+}
+
+.footerAbout h2 {
+    margin: 0 0 10px;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.footerAbout p {
+    max-width: 470px;
+    margin: 0;
+    color: #777b80;
+    font-size: 11px;
+    line-height: 1.55;
+}
+
+.footerColumn h3 {
+    margin: 0 0 15px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.footerColumn p {
+    margin: 0 0 12px;
+    font-size: 11px;
+    line-height: 1.45;
+    color: #202020;
+}
+
+.footerBottom {
+    width: min(1080px, 90%);
+    margin: 65px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #7d8184;
+    font-size: 10px;
+}
+
+/* ======== TABLET & MOBILE ======== */
+
+@media (max-width: 1024px) {
     .hero {
-        height: 760px;
-        min-height: 760px;
+        height: auto;
+        min-height: auto;
+        padding: 50px 0;
     }
 
-    .hero::before {
-        clip-path: polygon(
-            0 0,
-            100% 1%,
-            100% 88%,
-            0 78%
-        );
-    }
-
-    .heroInnerfg {
-        width: 88%;
+    .heroInner {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        height: auto;
     }
 
     .intro {
-        top: 9%;
-    }
-
-    h1 {
-        font-size: 48px;
-    }
-
-    .divider {
-        width: 300px;
+        position: static;
+        width: 100%;
+        margin-bottom: 40px;
     }
 
     .portrait {
-        width: 88%;
-
-        right: -14%;
-        bottom: 5%;
+        position: static;
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
     }
 
-    .nav-footer {
-        width: 88%;
+    .portrait img {
+        width: 100%;
+        height: auto;
+    }
+
+    .divider {
+        width: 100%;
+        max-width: 460px;
     }
 
     .contact {
-        display: block;
+        flex-wrap: wrap;
+        gap: 12px 20px;
     }
 
-    .contact span {
-        display: block;
-        margin-bottom: 8px;
+    .positionsSection {
+        flex-direction: column;
+    }
+
+    .sectionTitle {
+        width: 100%;
+        font-size: 28px;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    .positionsList {
+        width: 100%;
+        padding: 0;
+    }
+
+    .padAdding {
+        padding: 20px 0 0 0;
+    }
+
+    .blackContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 40px 0;
+    }
+
+    .blackImage {
+        position: static;
+        width: 260px;
+        height: 300px;
+    }
+
+    .blackText {
+        grid-column: auto;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .degreesList {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .degreesList li:not(:last-child)::after {
+        display: none;
+    }
+
+    .booksList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .publicationsInner {
+        padding: 45px 35px;
+    }
+
+    .footerInner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .secText, .secText2, .thirdText {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 42px;
+        line-height: 1.1;
+    }
+
+    .title {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .details {
+        font-size: 11px;
+    }
+
+    .address {
+        font-size: 11px;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .wrapListText {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .listText {
+        width: 100%;
+    }
+
+    .positionPage {
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .degreesList {
+        grid-template-columns: 1fr;
+    }
+
+    .degreesHeroTitle {
+        font-size: 32px;
+    }
+
+    .booksList {
+        grid-template-columns: 1fr;
+    }
+
+    .publicationsInner {
+        padding: 30px 20px;
+    }
+
+    .publicationsHeader h2 {
+        font-size: 24px;
+    }
+
+    .footerBottom {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
     }
 }
