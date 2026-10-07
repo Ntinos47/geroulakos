@@ -188,8 +188,10 @@ h1 {
     margin: 0 auto;
     justify-content: space-between;
     align-items: start;
-    flex-direction: row-reverse;
     padding: 40px 0;
+}
+.rowReverse {
+    flex-direction: row-reverse;
 }
 
 .sectionTitle {
