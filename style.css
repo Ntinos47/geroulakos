@@ -174,7 +174,7 @@ h1 {
 
 .secText {
     width: 55%;
-    padding: 30px 0;
+    padding: 50px 0 20px 0;
 }
 
 .parentPositionsContainer {
@@ -188,7 +188,7 @@ h1 {
     margin: 0 auto;
     justify-content: space-between;
     align-items: start;
-    padding: 40px 0;
+    padding: 20px 0;
 }
 .rowReverse {
     flex-direction: row-reverse;
@@ -214,7 +214,7 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 15px 0;
     font-size: 16px;
 }
 
@@ -223,7 +223,6 @@ h1 {
 }
 
 .positionTitle {
-    font-weight: bold;
     padding: 10px 0;
 }
 
@@ -416,6 +415,7 @@ h1 {
 
 .thirdText {
     width: 40%;
+    padding: 10px;
 }
 
 /* ========================= List Section ========================= */
@@ -429,7 +429,7 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     padding: 6px 0;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .listText2 {
@@ -572,7 +572,7 @@ h1 {
     font-size: 10px;
 }
 
-/* ======== TABLET & MOBILE ======== */
+/* ========================= TABLET & MOBILE ========================= */
 
 @media (max-width: 1024px) {
     .hero {
