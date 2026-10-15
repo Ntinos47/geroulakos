@@ -2,13 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Lato", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 .headerContainer {
     background: #0d0f0c;
     color: #d8d4c8;
-    font-family: Arial, sans-serif;
 }
 
 .hero {
@@ -39,42 +38,44 @@
     width: 100%;
     height: 100%;
     background: #0d0f0c;
-    clip-path: polygon(0 78%, 110% 96%, 100% 100%, 0 100%);
+    clip-path: polygon(0% 83%, 100% 100%, 100% 100%, 0 100%);
     z-index: 2;
 }
 
 .heroInner {
-    position: relative;
-    width: min(1200px, 90%);
+    width: min(1400px, 90%);
     height: 100%;
     margin: 0 auto;
+    display: flex;
 }
 
 .intro {
-    position: absolute;
-    left: 5%;
-    top: 14%;
-    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-bottom: 5%;
 }
 
 .title {
+    font-weight: 400;
     display: block;
-    font-size: 16px;
+    font-size: 24px;
     line-height: 1;
     margin-bottom: 18px;
     color: #d8d4c8;
 }
 
-h1 {
+.name {
     font-weight: 300;
-    font-size: 80px;
+    font-size: 90px;
     line-height: 0.91;
     letter-spacing: 0.015em;
     color: #d8d4c8;
 }
 
 .divider {
-    width: 460px;
+    width: 520px;
     height: 1px;
     background: #77786f;
     margin-top: 21px;
@@ -82,29 +83,25 @@ h1 {
 }
 
 .details {
-    font-size: 12px;
-    line-height: 1.55;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 2.2;
     color: #c1beb4;
 }
 
 .details p {
-    margin-bottom: 9px;
+    margin-bottom: 10px;
 }
 
 /* ========================= PORTRAIT ========================= */
 .portrait {
-    position: absolute;
-    width: 50%;
-    right: 0%;
-    bottom: 2%;
-    z-index: 1;
+
 }
 
 .portrait img {
     display: block;
-    width: 730px;
-    height: auto;
-    object-fit: contain;
+    height: 100%;
+    width: auto;
 }
 
 .gerImg {
@@ -115,9 +112,8 @@ h1 {
 /* ========================= Nav-FOOTER ========================= */
 .nav-footer {
     position: relative;
-    width: min(1200px, 90%);
+    width: min(1400px, 90%);
     margin: 0 auto;
-    font-size: 9px;
     line-height: 1.7;
     color: #aaa89f;
 }
@@ -128,7 +124,8 @@ h1 {
 }
 
 .address {
-    font-size: 12px;
+    font-weight: 300;
+    font-size: 18px;
     margin-top: 10px;
     margin-bottom: 40px;
 }
@@ -141,7 +138,8 @@ h1 {
     display: flex;
     flex-wrap: nowrap;
     gap: 8px 22px;
-    font-size: 12px;
+    font-size: 18px;
+    font-weight: 300;
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 40px;
@@ -160,7 +158,7 @@ h1 {
 }
 
 .contentContainer {
-    width: min(1200px, 90%);
+    width: min(1400px, 90%);
     min-height: 80px;
     background: #fff4e1;
     display: flex;
@@ -169,21 +167,25 @@ h1 {
     position: relative;
     margin: 0 auto;
     line-height: 1.7;
-    font-size: 14px;
 }
 
 .secText {
     width: 55%;
     padding: 50px 0 20px 0;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .parentPositionsContainer {
     width: 100%;
     background: linear-gradient(180deg, #e8decc 0%, #fff4e1 100%);
 }
+.positionsContainer {
+    padding-bottom: 30px;
+}
 
 .positionsSection {
-    width: min(1200px, 90%);
+    width: min(1400px, 90%);
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
@@ -197,12 +199,12 @@ h1 {
 .sectionTitle {
     width: 40%;
     padding: 10px;
-    font-size: 35px;
-    font-weight: lighter;
+    font-size: 48px;
+    font-weight: 300;
 }
 
 .padAdding {
-    padding: 20px 0 0 110px;
+    padding: 20px 0 0 90px;
 }
 
 .positionsList {
@@ -215,7 +217,6 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     padding: 15px 0;
-    font-size: 16px;
 }
 
 .listText {
@@ -224,16 +225,20 @@ h1 {
 
 .positionTitle {
     padding: 10px 0;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .positionSubTitle {
     font-weight: lighter;
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .positionPage {
     font-weight: lighter;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 300;
     padding: 10px 0;
     display: flex;
     justify-content: flex-end;
@@ -250,17 +255,17 @@ h1 {
 }
 
 .blackContainer {
-    width: min(1200px, 90%);
+    width: min(1400px, 90%);
     min-height: 320px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1.3fr 1fr;
     position: relative;
 }
 
 .blackImage {
-    width: 350px;
-    height: 400px;
+    width: 400px;
+    height: 470px;
     position: absolute;
     top: -40px;
     z-index: 10;
@@ -298,14 +303,14 @@ h1 {
 }
 
 .blackText h3 {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: 800;
     margin: 0;
     line-height: 1.3;
 }
 
 .blackText p {
-    font-size: 23px;
+    font-size: 32px;
     font-weight: 300;
     line-height: 1.45;
     margin: 25px 0;
@@ -326,7 +331,7 @@ h1 {
 }
 
 .contentSection {
-    width: min(1200px, 90%);
+    width: min(1400px, 90%);
     min-height: 200px;
     background: #fff4e1;
     display: flex;
@@ -334,13 +339,14 @@ h1 {
     position: relative;
     margin: 0 auto;
     line-height: 1.7;
-    font-size: 14px;
 }
 
 .secText2 {
     width: 55%;
     margin-bottom: 20px;
     padding-top: 20px;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 /* ========================= DEGREES ========================= */
@@ -349,7 +355,7 @@ h1 {
 }
 
 .degContainer {
-    width: min(1200px, 90%);
+    width: min(1400px, 90%);
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -360,8 +366,8 @@ h1 {
 
 .degreesHeroTitle {
     width: 100%;
-    font-size: 44px;
-    font-weight: lighter;
+    font-size: 48px;
+    font-weight: 300;
 }
 
 .degreesList {
@@ -393,13 +399,13 @@ h1 {
 }
 
 .degreeTitle {
-    font-size: 26px;
-    font-weight: 700;
+    font-size: 32px;
+    font-weight: 800;
     margin-bottom: 8px;
 }
 
 .degreeDescription {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 300;
     line-height: 1.5;
     margin: 0;
@@ -416,6 +422,8 @@ h1 {
 .thirdText {
     width: 40%;
     padding: 10px;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 /* ========================= List Section ========================= */
@@ -436,11 +444,23 @@ h1 {
     width: 100%;
 }
 
+.sectionTitle2 {
+    width: 40%;
+    padding: 10px;
+    font-size: 48px;
+    font-weight: 300;
+}
+.positionTitle2 {
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
 /* ========================= BOOKS ========================= */
 .publicationsSection {
     width: 100%;
     background: #fff4e1;
-    padding: 70px 0 60px;
+    padding: 60px 0;
 }
 
 .publicationsInner {
@@ -457,16 +477,16 @@ h1 {
 
 .publicationsHeader span {
     display: block;
-    font-size: 10px;
-    font-weight: 700;
+    font-size: 12px;
+    font-weight: 600;
     letter-spacing: 0.02em;
     margin-bottom: 10px;
 }
 
 .publicationsHeader p {
     margin: 0;
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 40px;
+    font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.01em;
 }
@@ -478,7 +498,7 @@ h1 {
 }
 
 .bookCard {
-    height: 255px;
+    height: 300px;
     border: 1px solid #333;
     border-radius: 6px;
     padding: 20px;
@@ -488,22 +508,22 @@ h1 {
 }
 
 .bookType {
-    font-size: 9px;
-    font-weight: 700;
+    font-size: 11px;
+    font-weight: 600;
     margin-bottom: 12px;
 }
 
 .bookCard h3 {
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 500;
     line-height: 1.25;
     margin: 0 0 12px;
 }
 
 .bookCard p {
     color: #aaa69b;
-    font-size: 11px;
+    font-size: 13px;
+    font-weight: 400;
     line-height: 1.45;
     margin: 0;
     max-width: 95%;
@@ -515,7 +535,8 @@ h1 {
     justify-content: space-between;
     align-items: center;
     color: #8e8a80;
-    font-size: 10px;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .siteFooter {
@@ -536,7 +557,7 @@ h1 {
 
 .footerAbout h2 {
     margin: 0 0 10px;
-    font-size: 23px;
+    font-size: 28px;
     font-weight: 700;
 }
 
@@ -544,20 +565,22 @@ h1 {
     max-width: 470px;
     margin: 0;
     color: #777b80;
-    font-size: 11px;
+    font-size: 14px;
+    font-weight: 400;
     line-height: 1.55;
 }
 
 .footerColumn h3 {
     margin: 0 0 15px;
-    font-size: 9px;
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.03em;
 }
 
 .footerColumn p {
     margin: 0 0 12px;
-    font-size: 11px;
+    font-size: 14px;
+    font-weight: 400;
     line-height: 1.45;
     color: #202020;
 }
@@ -569,7 +592,8 @@ h1 {
     justify-content: space-between;
     align-items: center;
     color: #7d8184;
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 /* ========================= TABLET & MOBILE ========================= */
