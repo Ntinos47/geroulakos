@@ -60,7 +60,7 @@
 .title {
     font-weight: 400;
     display: block;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1;
     margin-bottom: 18px;
     color: #d8d4c8;
@@ -84,7 +84,7 @@
 
 .details {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 2.2;
     color: #c1beb4;
 }
@@ -123,7 +123,7 @@
 
 .address {
     font-weight: 300;
-    font-size: 18px;
+    font-size: 14px;
     margin-top: 10px;
     margin-bottom: 40px;
 }
@@ -136,7 +136,7 @@
     display: flex;
     flex-wrap: nowrap;
     gap: 8px 22px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 300;
     flex-direction: row;
     justify-content: space-between;
@@ -610,9 +610,21 @@
 
 /* ========================= TABLET & MOBILE ========================= */
 
-@media (min-width: 1700px) {
+@media (min-width: 1600px) {
     .name {
         font-size: 110px;
+    }
+    .details {
+        font-size: 18px;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .address {
+        font-size: 18px;
+    }
+    .contact {
+        font-size: 18px;
     }
 }
 
