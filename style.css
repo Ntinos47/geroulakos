@@ -67,7 +67,7 @@
 }
 
 .name {
-    font-weight: 300;
+    font-weight: 100;
     font-size: 90px;
     line-height: 0.91;
     letter-spacing: 0.015em;
@@ -94,9 +94,7 @@
 }
 
 /* ========================= PORTRAIT ========================= */
-.portrait {
 
-}
 
 .portrait img {
     display: block;
@@ -232,13 +230,13 @@
 .positionSubTitle {
     font-weight: lighter;
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 100;
 }
 
 .positionPage {
     font-weight: lighter;
     font-size: 22px;
-    font-weight: 300;
+    font-weight: 100;
     padding: 10px 0;
     display: flex;
     justify-content: flex-end;
@@ -342,7 +340,7 @@
 }
 
 .secText2 {
-    width: 55%;
+    width: 50%;
     margin-bottom: 20px;
     padding-top: 20px;
     font-size: 16px;
@@ -464,10 +462,13 @@
 }
 
 .publicationsInner {
-    width: min(1150px, 90%);
-    margin: 0 auto;
     background: #000;
-    padding: 75px 65px 80px;
+    padding: 70px 0px;
+}
+
+.publicationsContainer {
+    margin: 0 auto;
+    width: min(1400px, 90%);
 }
 
 .publicationsHeader {
@@ -498,7 +499,7 @@
 }
 
 .bookCard {
-    height: 300px;
+    height: 320px;
     border: 1px solid #333;
     border-radius: 6px;
     padding: 20px;
@@ -596,7 +597,25 @@
     font-weight: 400;
 }
 
+.websiteLink {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    text-decoration: underline;
+}
+.websiteLink:hover {
+    color: #7d8184;
+    text-decoration: underline;
+}
+
 /* ========================= TABLET & MOBILE ========================= */
+
+@media (min-width: 1700px) {
+    .name {
+        font-size: 110px;
+    }
+}
+
 
 @media (max-width: 1024px) {
     .hero {
